@@ -4,7 +4,7 @@ This repository implements an **image classification pipeline** to detect normal
 
 ## Project Overview
 
-- **Objective:** Build and train a CNN model to classify yeast cell images (32×32 grayscale) into normal and abnormal categories.  
+- **Objective:** Build and train a ResNet-32 model to classify yeast cell images (32×32 grayscale) into normal and abnormal categories.  
 - **Dataset:** Microscopy images annotated via Excel files. The dataset is split into training, validation, and test sets.
 
 ## Pipeline Components
@@ -24,9 +24,4 @@ This repository implements an **image classification pipeline** to detect normal
 4. **Loss Function & Optimization**  
    - Custom **Focal Loss** with class-weighting to address dataset imbalance.  
    - Trained using **AdamW** optimizer with **ReduceLROnPlateau** scheduler and **early stopping**.
-
-5. **Evaluation & Analysis**  
-   - Reported test accuracy (85.54%) and monitored validation loss.  
-   - Visualized training/validation curves.  
-   - Analyzed misclassified samples with plotting utilities.
 
